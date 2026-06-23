@@ -1,6 +1,7 @@
 # Python
 __pycache__/
 *.py[cod]
+*.pyo
 
 # Pytest
 .pytest_cache/
@@ -8,6 +9,14 @@ __pycache__/
 # Virtual Environment
 venv/
 .env/
+
+# Playwright
+playwright-report/
+test-results/
+
+# Coverage
+.coverage
+htmlcov/
 
 # Logs
 *.log
