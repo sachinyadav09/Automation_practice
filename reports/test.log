@@ -1,0 +1,24 @@
+2026-06-19 19:17:56 | INFO | Starting of BookingApp Application
+2026-06-19 19:17:57 | INFO | Starting testing for Reserve Room
+2026-06-19 19:17:57 | INFO | Visit the application 
+2026-06-19 19:18:01 | INFO | Clicking on the Booking button/link
+2026-06-19 19:18:03 | INFO | Go to checkIn 
+2026-06-19 19:18:06 | INFO | press ctrl +A
+2026-06-19 19:18:08 | INFO | press Backspace
+2026-06-19 19:18:10 | INFO | enter date
+2026-06-19 19:18:13 | INFO | press enter 
+2026-06-19 19:18:15 | INFO | Go to checkOut 
+2026-06-19 19:18:17 | INFO | press ctrl +A
+2026-06-19 19:18:19 | INFO | press Backspace
+2026-06-19 19:18:21 | INFO | enter date
+2026-06-19 19:18:23 | INFO | press enter 
+2026-06-19 19:18:25 | INFO | Click on the check Availability Button
+2026-06-19 19:18:29 | INFO | click button 
+2026-06-19 19:18:31 | INFO | Clicking on the ReserveButton
+2026-06-19 19:18:33 | INFO | typing first_name
+2026-06-19 19:18:36 | INFO | typing last_name
+2026-06-19 19:18:38 | INFO | typing email
+2026-06-19 19:18:40 | INFO | typing phone_number
+2026-06-19 19:18:42 | INFO | Clicking on Confirn Reserve Now button
+2026-06-19 19:18:46 | INFO | Return to Home Page
+2026-06-19 19:18:50 | INFO | Done with the Testing it Working..
