@@ -8,20 +8,10 @@ __pycache__/
 
 # Virtual Environment
 venv/
-.env/
-
-# Playwright
-playwright-report/
-test-results/
-
-# Coverage
-.coverage
-htmlcov/
+.env
 
 # Logs
 *.log
-
-# Reports
 reports/
 
 # Screenshots
@@ -30,6 +20,6 @@ screen_shots/
 # VS Code
 .vscode/
 
-# OS Files
+# OS files
 .DS_Store
 Thumbs.db
