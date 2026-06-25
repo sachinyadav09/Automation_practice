@@ -19,7 +19,7 @@ class BookingAppPage(BasePage):
         self.checkIn = page.locator("label[for = 'checkin'] + div input ")
         self.checkOut = page.locator("label[for = 'checkout'] + div input ")
         self.checkAvailability_btn= page.get_by_role("button" , name = "Check Availability")
-        self.bookRoom_btn = page.get_by_role("link" , name = "Book Now").nth(2)
+        self.bookRoom_btn = page.get_by_role( "link",name="Book now").nth(1)
         self.reserve_btn = page.locator("#doReservation")
         self.reserve_fN = page.get_by_placeholder("Firstname")
         self.reserve_LN = page.get_by_placeholder("Lastname")
@@ -84,10 +84,12 @@ class BookingAppPage(BasePage):
     def click_checkAvailability_btn(self):
         logger.info("Click on the check Availability Button")
         self.checkAvailability_btn.click()
-        self.page.wait_for_timeout(2000)
+        # self.page.wait_for_timeout(2000)
 
     def roomBook_btn(self):
-        logger.info("click button ")
+        logger.info("waiting to book now button  ")
+        expect(self.bookRoom_btn).to_be_visible(timeout=10000)
+        logger.info("Clicking Book Now button")
         self.bookRoom_btn.click()    
     
     def reserveRoom_btn(self,firstname,lastname, email ,phone):
@@ -104,6 +106,7 @@ class BookingAppPage(BasePage):
         logger.info("Clicking on Confirn Reserve Now button")
         self.confirmReserve_btn.click()
         expect(self.page.get_by_text ("Booking Confirmed")).to_be_visible()
+        logger.info("Text is shown")
         self.page.wait_for_timeout(2000)
         logger.info("Return to Home Page")
         self.return_to_home.click()

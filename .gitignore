@@ -10,9 +10,12 @@ __pycache__/
 venv/
 .env
 
-# Logs
+# Logs & Reports 
 *.log
 reports/
+videos/
+trace.zip
+*.zip
 
 # Screenshots
 screen_shots/

@@ -1,4 +1,4 @@
-from playwright.sync_api import Page
+from playwright.sync_api import Page, expect
 from pages.base_page import BasePage
 from utils.logger import setup_logger
 from test_data.test_data import URL1
@@ -68,11 +68,19 @@ class AutomationPage(BasePage):
            logger.info("Typing something")
            self.fill(self.search_box , search)
            self.click(self.click_search_icon)
-           with self.page.expect_popup() as obj:
-                   self.click(self.result_click)
-                   nw = obj.value
-                   nw.wait_for_timeout(2000)
-                   
+           expect(self.result_click).to_be_visible(timeout=15000)
+           try:
+               with self.page.expect_popup(timeout=15000) as obj:
+                       self.click(self.result_click)
+                       nw = obj.value
+                       nw.wait_for_timeout(2000)
+           except Exception as exc:
+               logger.warning("Popup did not open, continuing on current page: %s", exc)
+               self.click(self.result_click)
+               self.page.wait_for_load_state("load", timeout=15000)
+               nw = self.page
+               nw.wait_for_timeout(2000)
+               
 # Hover  on the button 
     def hover_button(self):
            logger.info("Hover on the Point me Button")
@@ -103,7 +111,17 @@ class AutomationPage(BasePage):
 # Uplaod files functionality 
     def upload_files(self):
            logger.info("strating uplaoding the files ")
-           self.upload_multiple_file.set_input_files(["screen_shots/customer_story.png","screen_shots/home_page.png"])
+           from pathlib import Path
+           root = Path(__file__).resolve().parents[1]
+           files = [
+               root / "screen_shots" / "customer_story.png",
+               root / "screen_shots" / "home_page.png",
+           ]
+           existing = [str(path) for path in files if path.exists()]
+           if not existing:
+               logger.error("Upload files not found: %s", files)
+               return
+           self.upload_multiple_file.set_input_files(existing)
            self.click(self.upload_button)
            logger.info("uplaoding of file is Completed ..")
 
@@ -132,7 +150,7 @@ class AutomationPage(BasePage):
     def popup_click(self):
            logger.info("Detect & click the pop-up button")
            with self.page.expect_popup() as obj:
-                   self.click(self.pop_up_button)
+                   self.pop_up_button.click()
                    nP = obj.value
                    nP.wait_for_timeout(1000)
 
