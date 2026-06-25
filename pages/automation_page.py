@@ -84,6 +84,8 @@ class AutomationPage(BasePage):
 # Hover  on the button 
     def hover_button(self):
            logger.info("Hover on the Point me Button")
+           self.mouse_button.scroll_into_view_if_needed()
+           expect(self.mouse_button).to_be_visible(timeout=10000)
            self.mouse_button.hover()
 
 # Slider the price range(Use of mouse slider)
