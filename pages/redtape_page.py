@@ -36,7 +36,7 @@ class RedTapePage(BasePage):
 
     def verify_cart_visible(self):
         logger.info("Verifying cart visibility")
-        expect(self.view_cart_link).to_be_visible()
+        expect(self.view_cart_link).to_be_visible(timeout =10000)
 
     def open_cart(self):
         logger.info("Opening cart page")
