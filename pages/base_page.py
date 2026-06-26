@@ -9,7 +9,8 @@ class BasePage:
 
     def navigate(self, url):
         # logger.info(f"Clicking in the {url}")
-        self.page.goto(url)
+        self.page.goto(url, wait_until="domcontentloaded",
+        timeout=60000)
 
     def click(self, locator):
         # logger.info(f"Clicking on the {locator}")

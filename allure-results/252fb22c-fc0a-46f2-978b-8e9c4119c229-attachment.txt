@@ -1,0 +1,22 @@
+2026-06-25 17:54:45,230 | INFO | Starting testing for Reserve Room
+2026-06-25 17:54:45,231 | INFO | Visit the application 
+2026-06-25 17:54:46,029 | INFO | Clicking on the Booking button/link
+2026-06-25 17:54:46,547 | INFO | Go to checkIn 
+2026-06-25 17:54:48,046 | INFO | press ctrl +A
+2026-06-25 17:54:48,074 | INFO | press Backspace
+2026-06-25 17:54:48,112 | INFO | enter date
+2026-06-25 17:54:48,315 | INFO | press enter 
+2026-06-25 17:54:48,340 | INFO | Go to checkOut 
+2026-06-25 17:54:48,419 | INFO | press ctrl +A
+2026-06-25 17:54:48,437 | INFO | press Backspace
+2026-06-25 17:54:48,461 | INFO | enter date
+2026-06-25 17:54:48,640 | INFO | press enter 
+2026-06-25 17:54:48,654 | INFO | Click on the check Availability Button
+2026-06-25 17:54:48,706 | INFO | waiting to book now button  
+2026-06-25 17:54:48,720 | INFO | Clicking Book Now button
+2026-06-25 17:54:49,237 | INFO | Clicking on the ReserveButton
+2026-06-25 17:54:50,107 | INFO | typing first_name
+2026-06-25 17:54:50,141 | INFO | typing last_name
+2026-06-25 17:54:50,164 | INFO | typing email
+2026-06-25 17:54:50,200 | INFO | typing phone_number
+2026-06-25 17:54:50,224 | INFO | Clicking on Confirn Reserve Now button

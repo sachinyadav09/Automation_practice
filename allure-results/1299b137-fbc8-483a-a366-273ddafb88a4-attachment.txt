@@ -1,0 +1,5 @@
+2026-06-25 17:49:43,555 | INFO | File Upload Testing Started
+2026-06-25 17:49:43,557 | INFO | Opening Automation Practice Website
+2026-06-25 17:49:49,302 | INFO | strating uplaoding the files 
+2026-06-25 17:49:49,303 | ERROR | Upload files not found: [WindowsPath('C:/Users/LAP-44/Desktop/Playwright_Automation/screen_shots/customer_story.png'), WindowsPath('C:/Users/LAP-44/Desktop/Playwright_Automation/screen_shots/home_page.png')]
+2026-06-25 17:49:49,305 | INFO | File Upload testng is Done....

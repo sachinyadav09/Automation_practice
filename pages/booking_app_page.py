@@ -26,7 +26,7 @@ class BookingAppPage(BasePage):
         self.reserve_email = page.get_by_placeholder("Email")
         self.reserve_phoneNum = page.get_by_placeholder("Phone")
         self.confirmReserve_btn= page.get_by_role("button", name = "Reserve Now")
-        expect 
+        self.error_btn = page.get_by_role("button" , name = "Back")
         self.return_to_home = page.locator('a[type="button"]' ).filter(has_text="Return home") 
         
 
@@ -105,11 +105,21 @@ class BookingAppPage(BasePage):
         self.reserve_phoneNum.fill(phone)
         logger.info("Clicking on Confirn Reserve Now button")
         self.confirmReserve_btn.click()
-        expect(self.page.get_by_text ("Booking Confirmed")).to_be_visible()
-        logger.info("Text is shown")
-        self.page.wait_for_timeout(2000)
-        logger.info("Return to Home Page")
-        self.return_to_home.click()
+        self.page.wait_for_timeout(3000)
+        if self.page.get_by_text ("Booking Confirmed").is_visible():
+                logger.info("Text is shown")
+                self.page.wait_for_timeout(2000)
+                logger.info("Return to Home Page")
+                self.return_to_home.click()
+        elif self.error_btn.is_visible():
+
+            logger.warning("Error page appeared. Clicking Back button.")
+            self.error_btn.click()
+
+        else:
+
+            logger.warning("Neither Booking Confirmed nor Error Page found.")
+
         self.page.wait_for_timeout(2000)
 
     

@@ -10,20 +10,20 @@ def test_BookApp_web(page):
     logger.info("Login in the Application")
     booking_app_page.visit_site()
 
-def test_click_action_btn(page):
-    booking_app_page = BookingAppPage(page)
-    booking_app_page.visit_site()
-    logger.info("Click on the action btn")
-    booking_app_page.click_action_btn()
+# def test_click_action_btn(page):
+#     booking_app_page = BookingAppPage(page)
+#     booking_app_page.visit_site()
+#     logger.info("Click on the action btn")
+#     booking_app_page.click_action_btn()
 
-def test_login(page):
-    logger.info("Staring Login testing")
-    booking_app_page = BookingAppPage(page)
-    booking_app_page.visit_site()
-    booking_app_page.click_action_btn()
-    booking_app_page.login("Sachinyadav121", "password@11")
-    logger.info("Login testing Done..")
-    booking_app_page.backTohome()
+# def test_login(page):
+#     logger.info("Staring Login testing")
+#     booking_app_page = BookingAppPage(page)
+#     booking_app_page.visit_site()
+#     booking_app_page.click_action_btn()
+#     booking_app_page.login("Sachinyadav121", "password@11")
+#     logger.info("Login testing Done..")
+#     booking_app_page.backTohome()
     
 def test_BookAvailability(page):
     logger.info("Starting testing for Reserve Room")

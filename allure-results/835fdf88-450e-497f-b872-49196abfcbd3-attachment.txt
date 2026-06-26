@@ -1,0 +1,4 @@
+2026-06-25 17:46:06,839 | INFO | Testing Alert funtionality 
+2026-06-25 17:46:06,841 | INFO | Opening Automation Practice Website
+2026-06-25 17:46:10,421 | INFO | clicking on alert button 
+2026-06-25 17:46:10,531 | INFO | Testing alerts Done..

@@ -33,21 +33,21 @@ import pytest
 pytestmark = pytest.mark.skip(
     reason="NetSuite blocks Playwright automation"
 )
-def test_oracle(browser_page):
+def test_oracle(page):
 
-    browser_page.goto(
+    page.goto(
         "https://www.netsuite.com/portal/in/home.shtml",
         wait_until="networkidle"
     )
 
-    discover = browser_page.get_by_role(
+    discover = page.get_by_role(
         "link",
         name="Discover More"
     )
 
     expect(discover).to_be_visible(timeout=15000)
 
-    with browser_page.expect_popup() as popup_info:
+    with page.expect_popup() as popup_info:
         discover.click()
 
     nw = popup_info.value

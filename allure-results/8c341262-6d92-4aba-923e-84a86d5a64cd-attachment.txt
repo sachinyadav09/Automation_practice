@@ -1,0 +1,5 @@
+2026-06-25 17:49:49,448 | INFO | Pagination Testing Starting..
+2026-06-25 17:49:49,451 | INFO | Opening Automation Practice Website
+2026-06-25 17:49:53,827 | INFO | Going the 3 page
+2026-06-25 17:49:53,924 | INFO | INSIDE the 3 page
+2026-06-25 17:49:53,984 | INFO | Pagination Testing Starting..

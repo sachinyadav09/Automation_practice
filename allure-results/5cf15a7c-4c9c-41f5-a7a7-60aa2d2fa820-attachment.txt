@@ -1,0 +1,13 @@
+2026-06-25 17:46:58,265 | INFO | Starting Sauce Demo Login Test :
+2026-06-25 17:46:58,267 | INFO | Opening Sauce Demo Website
+2026-06-25 17:46:59,626 | INFO | Logging in with username: performance_glitch_user
+2026-06-25 17:47:04,809 | INFO | Verifying login was successful
+2026-06-25 17:47:04,818 | INFO | Login test completed successfully
+2026-06-25 17:47:04,819 | INFO | Adding product to cart
+2026-06-25 17:47:04,855 | INFO | Product added to cart successfully
+2026-06-25 17:47:04,857 | INFO | Navigating to cart view
+2026-06-25 17:47:04,921 | INFO | Cart view opened successfully
+2026-06-25 17:47:04,922 | INFO | Initiating checkout process
+2026-06-25 17:47:05,069 | INFO | Checkout information submitted successfully
+2026-06-25 17:47:05,070 | INFO | Finishing checkout process
+2026-06-25 17:47:05,110 | INFO | Checkout process completed successfully

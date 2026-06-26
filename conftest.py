@@ -1,35 +1,34 @@
+import os
 import pytest
-from playwright.sync_api import sync_playwright
+
 
 @pytest.fixture
-def browser_page(request):
+def page(browser, request):
 
-    with sync_playwright() as p:
+    os.makedirs("reports/videos", exist_ok=True)
+    os.makedirs("reports/traces", exist_ok=True)
+    os.makedirs("reports/screen_shots", exist_ok=True)
 
-        browser = p.chromium.launch(
-            headless=False
-        )
+    context = browser.new_context(
+        record_video_dir="reports/videos/"
+    )
 
-        context = browser.new_context(
-            record_video_dir="reports/videos/"
-        )
+    context.tracing.start(
+        screenshots=True,
+        snapshots=True,
+        sources=True
+    )
 
-        context.tracing.start(
-            screenshots=True,
-            snapshots=True,
-            sources=True
-        )
+    page = context.new_page()
 
-        page = context.new_page()
+    yield page
 
-        yield page
+    context.tracing.stop(
+        path=f"reports/traces/{request.node.name}.zip"
+    )
 
-        context.tracing.stop(
-            path=f"reports/traces/{request.node.name}.zip"
-        )
+    context.close()
 
-        context.close()
-        browser.close()
 
 @pytest.hookimpl(hookwrapper=True)
 def pytest_runtest_makereport(item, call):
@@ -39,10 +38,9 @@ def pytest_runtest_makereport(item, call):
 
     if report.when == "call" and report.failed:
 
-        page = item.funcargs.get("browser_page")
+        page = item.funcargs.get("page")
 
         if page:
-
             page.screenshot(
                 path=f"reports/screen_shots/{item.name}.png",
                 full_page=True

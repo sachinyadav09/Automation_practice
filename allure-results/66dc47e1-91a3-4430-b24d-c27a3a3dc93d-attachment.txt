@@ -1,0 +1,8 @@
+2026-06-25 17:50:27,953 | INFO | Starting RedTape Cart Test
+2026-06-25 17:50:27,956 | INFO | Opening RedTape Website
+2026-06-25 17:50:32,862 | INFO | Searching product: T-shirts
+2026-06-25 17:50:33,003 | INFO | Selecting product
+2026-06-25 17:50:35,110 | INFO | Adding product to cart
+2026-06-25 17:50:37,727 | INFO | Verifying cart visibility
+2026-06-25 17:50:38,752 | INFO | Opening cart page
+2026-06-25 17:50:39,489 | INFO | Page Title: Your Shopping Cart – Redtape

@@ -1,0 +1,3 @@
+2026-06-25 17:50:08,255 | INFO | Visit the application 
+2026-06-25 17:50:09,683 | INFO | Click on the action btn
+2026-06-25 17:50:11,091 | INFO |  Action btn clicked 

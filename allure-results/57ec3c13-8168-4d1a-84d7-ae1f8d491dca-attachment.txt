@@ -1,0 +1,4 @@
+2026-06-25 17:54:31,323 | INFO | Staring testing Pop-Up functionality 
+2026-06-25 17:54:31,324 | INFO | Opening Automation Practice Website
+2026-06-25 17:54:36,498 | INFO | Detect & click the pop-up button
+2026-06-25 17:54:37,693 | INFO | done with the Pop-up  functionality 

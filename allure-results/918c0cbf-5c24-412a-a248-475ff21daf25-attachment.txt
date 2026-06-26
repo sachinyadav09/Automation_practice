@@ -1,0 +1,4 @@
+2026-06-25 17:49:57,727 | INFO | Staring testing Input Alert functionality 
+2026-06-25 17:49:57,728 | INFO | Opening Automation Practice Website
+2026-06-25 17:50:01,649 | INFO | Input the name in the alert box
+2026-06-25 17:50:01,732 | INFO | done with the Input alert functionality 

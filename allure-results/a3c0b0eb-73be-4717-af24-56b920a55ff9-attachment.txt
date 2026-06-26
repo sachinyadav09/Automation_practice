@@ -1,0 +1,9 @@
+2026-06-25 17:46:24,135 | INFO | Staring Login testing
+2026-06-25 17:46:24,137 | INFO | Visit the application 
+2026-06-25 17:46:25,833 | INFO |  Action btn clicked 
+2026-06-25 17:46:25,833 | INFO | Typing Username
+2026-06-25 17:46:26,092 | INFO | Typing Password
+2026-06-25 17:46:26,110 | INFO | Click on Login btn 
+2026-06-25 17:46:27,014 | INFO | get the text of Invalid credentials
+2026-06-25 17:46:27,014 | INFO | Login testing Done..
+2026-06-25 17:46:27,014 | INFO | Click On Front page btn

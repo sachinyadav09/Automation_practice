@@ -1,0 +1,11 @@
+2026-06-26 11:23:56,867 | INFO | Mouse & Slider Testing Starting..
+2026-06-26 11:23:56,868 | INFO | Opening Automation Practice Website
+2026-06-26 11:24:00,599 | INFO | Hover on the Point me Button
+2026-06-26 11:24:00,844 | INFO | Starting of slider functionality
+2026-06-26 11:24:00,885 | INFO | pointer move 
+2026-06-26 11:24:00,910 | INFO | pointer catch 
+2026-06-26 11:24:00,933 | INFO | move pointer to the d/f value
+2026-06-26 11:24:00,957 | INFO | Mouse up 
+2026-06-26 11:24:00,977 | INFO | Moving on the dropdown values
+2026-06-26 11:24:01,032 | INFO | get the value 
+2026-06-26 11:24:06,085 | INFO | Mouse & Slider Testing Done..

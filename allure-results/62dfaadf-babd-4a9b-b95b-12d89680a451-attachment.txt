@@ -1,0 +1,10 @@
+2026-06-25 17:45:38,562 | INFO | Opening Automation Practice Website
+2026-06-25 17:45:42,016 | INFO | Tab changing & USERNAME typing  functionality Started
+2026-06-25 17:45:42,016 | INFO | Entering username: testuser
+2026-06-25 17:45:42,062 | INFO | checking the checkbox is mark or not 
+2026-06-25 17:45:42,111 | INFO | Typing something
+2026-06-25 17:45:57,219 | WARNING | Popup did not open, continuing on current page: Timeout 15000ms exceeded while waiting for event "popup"
+=========================== logs ===========================
+waiting for event "popup"
+============================================================
+2026-06-25 17:45:59,325 | INFO | Tab changing & USERNAME typing  functionality Ended..

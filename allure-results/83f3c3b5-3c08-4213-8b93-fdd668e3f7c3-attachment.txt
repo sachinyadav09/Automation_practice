@@ -1,0 +1,3 @@
+Create user ID  is  8520492
+Get the data of the created user  {'id': 8520492, 'name': 'Sachin Yadav', 'email': 'sachin388fb2@gmail.com', 'gender': 'male', 'status': 'active'}
+User updated successfully by using Put Request  {'id': 8520492, 'name': 'Updated Sachin316460', 'email': 'updated316460@gmail.com', 'gender': 'male', 'status': 'active'}

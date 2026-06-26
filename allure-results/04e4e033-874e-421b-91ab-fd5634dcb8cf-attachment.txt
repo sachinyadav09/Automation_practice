@@ -1,0 +1,22 @@
+2026-06-25 17:54:45 | [32mINFO[0m | Starting testing for Reserve Room
+2026-06-25 17:54:45 | [32mINFO[0m | Visit the application 
+2026-06-25 17:54:46 | [32mINFO[0m | Clicking on the Booking button/link
+2026-06-25 17:54:46 | [32mINFO[0m | Go to checkIn 
+2026-06-25 17:54:48 | [32mINFO[0m | press ctrl +A
+2026-06-25 17:54:48 | [32mINFO[0m | press Backspace
+2026-06-25 17:54:48 | [32mINFO[0m | enter date
+2026-06-25 17:54:48 | [32mINFO[0m | press enter 
+2026-06-25 17:54:48 | [32mINFO[0m | Go to checkOut 
+2026-06-25 17:54:48 | [32mINFO[0m | press ctrl +A
+2026-06-25 17:54:48 | [32mINFO[0m | press Backspace
+2026-06-25 17:54:48 | [32mINFO[0m | enter date
+2026-06-25 17:54:48 | [32mINFO[0m | press enter 
+2026-06-25 17:54:48 | [32mINFO[0m | Click on the check Availability Button
+2026-06-25 17:54:48 | [32mINFO[0m | waiting to book now button  
+2026-06-25 17:54:48 | [32mINFO[0m | Clicking Book Now button
+2026-06-25 17:54:49 | [32mINFO[0m | Clicking on the ReserveButton
+2026-06-25 17:54:50 | [32mINFO[0m | typing first_name
+2026-06-25 17:54:50 | [32mINFO[0m | typing last_name
+2026-06-25 17:54:50 | [32mINFO[0m | typing email
+2026-06-25 17:54:50 | [32mINFO[0m | typing phone_number
+2026-06-25 17:54:50 | [32mINFO[0m | Clicking on Confirn Reserve Now button

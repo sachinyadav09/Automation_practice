@@ -1,0 +1,2 @@
+2026-06-25 17:54:37,835 | INFO | Login in the Application
+2026-06-25 17:54:37,836 | INFO | Visit the application 
