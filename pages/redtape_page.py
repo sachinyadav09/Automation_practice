@@ -13,7 +13,7 @@ class RedTapePage(BasePage):
 
         # Locators
         self.search_box = page.get_by_placeholder("What are you looking for?" )
-        self.product = page.get_by_label("White T Shirt for Men")
+        self.product = page.get_by_role("link",name = "Round Neck T-Shirt for Men").first
         self.add_to_cart_button = page.get_by_role("button",name="add")
         self.view_cart_link = page.get_by_role("link",name="View cart")
 
@@ -28,7 +28,7 @@ class RedTapePage(BasePage):
 
     def select_product(self):
         logger.info("Selecting product")
-        self.click(self.product)
+        self.product.click(timeout=10000)
 
     def add_product_to_cart(self):
         logger.info("Adding product to cart")
