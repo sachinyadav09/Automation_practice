@@ -1,11 +1,8 @@
-from playwright.sync_api import sync_playwright
+from playwright.sync_api import Page
 
 
-def test_api_network_testing():
+def test_api_network_testing(page:Page):
 
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)
-        page = browser.new_page()
     
         def handle_api_route(route):
             # We intercept the real API call and return our own custom JSON response
@@ -24,4 +21,3 @@ def test_api_network_testing():
         
         # The page will now display "Super_Coder_99" and the fake balance!
         page.wait_for_timeout(5000)
-        browser.close()
